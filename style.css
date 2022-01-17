@@ -15,11 +15,65 @@ button {
 li a{
     font-weight: bold;
 }
+label{
+    color: black;
+}
+form{
+    display: table;
+    text-align: right;
+    line-height: 40px;
+    width: 100%;
+}
+.form-mod{
+    width: 100%;
+}
 .keywords{
     font-size: 14px;
     color:#6e6e6e;
     text-align: center;
     width: 800px;
+}
+.text-mod{
+    font-size: 22px;
+}
+.row-contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-contact{
+    height: 300px;
+
+}
+.flexcentre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row-contact p{
+    color: white;
+    margin: 0px;
+
+}
+.text-mod-size{
+    width: 380px;
+}
+.bloc-text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-size{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 31, 0.7);
 }
 a:hover {
     text-decoration: none;
@@ -102,6 +156,10 @@ a:hover {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
+.bloc-position{
+    position: relative;
+}
+
 
 .b-parallax {
     background-attachment: fixed;
@@ -378,6 +436,11 @@ a:hover {
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
+    .nav-contact{
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+    }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -419,6 +482,10 @@ a:hover {
 
 nav .caret {
     margin: 0 5px;
+}
+.navbar-brand img {
+    max-height: 40px;
+    width: auto;
 }
 
 .dropdown-menu .dropdown-menu {
@@ -659,15 +726,27 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
 }
-
+footer a{
+    color: white;
+    border-radius: 5px;
+    width: 85%;
+    height: 30px;
+}
 .container {
-    max-width: 1000px;
+    width: 1000px;
+}
+#bloc-2-services h2{
+    color: black;
+    font-weight: bold;
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    background-clip: text;
+    width: 90%;
+}
+.font-size-h2{
+    font-size: 22px;
 }
 
 .hero-bloc-text-sub {
@@ -685,11 +764,13 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 12px;
+    color: black;
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    width: 60%;
+    min-width: 350px;
     margin: auto auto auto auto;
 }
 
@@ -700,7 +781,6 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -708,8 +788,11 @@ p {
 }
 
 .social {
-    max-width: 400px;
-    margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0 10px 0;
 }
 
 h2 {
@@ -723,6 +806,9 @@ h3 {
     font-weight: 700;
     color: #333333!important;
 }
+.row h3{
+    color: white;
+}
 
 .med-width-whitespace {
     max-width: 800px;
@@ -730,12 +816,12 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
+h1,h2 {
+    color: white;
 }
 
 h4 {
-    color: #333333!important;
+    color: white;
 }
 
 .icons {
@@ -761,7 +847,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -779,21 +865,19 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: black;
 }
-
-.tc-white {
-    color: #F3976C!important;
+.bgc-atomic-tangerine-contact{
+    background-color: rgba(0, 0, 0, .8);
 }
-
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: black;
+    color: white;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: white;
+    color: black;
 }
 
 .ltc-white {
@@ -805,11 +889,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #b06c4e!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #b06c4e!important;
 }
 
 .icon-dark-slate-blue {
@@ -830,7 +914,13 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("./img/SodaPDF-converted-image-de-presentation\ \(1\).jpg");
+}
+footer li{
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 @media (max-width: 1024px) {
